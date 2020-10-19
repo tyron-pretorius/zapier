@@ -1,9 +1,9 @@
 #input variables to Zapier Step 4: Upload File to Marketo
 input={
-  'path': 'xxx' #from Step 2: Get Dropbox Temporary Link
-  'c_type': 'xxx' #from Step 1: Get Submission from Google Form
-  'c_name': 'xxx' from Step 1: Get Submission from Google Form
-  'token' : 'xxx' from Step 3: Get Marketo Access Token
+  'path': 'Content Link' #from Step 2: Get Dropbox Temporary Link
+  'c_type': 'Content Type' #from Step 1: Get Submission from Google Form
+  'c_name': 'Content Name' #from Step 1: Get Submission from Google Form
+  'token' : 'Token' #from Step 3: Get Marketo Access Token
   }
 
 
