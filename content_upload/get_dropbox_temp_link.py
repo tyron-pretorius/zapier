@@ -1,3 +1,8 @@
+#input variables to Zapier Step 2: Get Dropbox Temporary Link
+input={
+  'link': 'Dropbox path for content' #from Step 1: Get Submission from Google Form
+  }
+
 import re
 from urllib.parse import urlparse
 from urllib.parse import unquote
