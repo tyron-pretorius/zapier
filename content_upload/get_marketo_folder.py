@@ -1,7 +1,7 @@
 #input variables to Zapier Step 7: Get Marketo Folder ID
 input={
   'c_type': 'Content Type' #from Step 1: Get Submission from Google Form
-  'token': Token' #from Step 3: Get Marketo Access Token
+  'token': 'Token' #from Step 3: Get Marketo Access Token
   }
   
 import requests
