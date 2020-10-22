@@ -33,7 +33,6 @@ url = 'https://###-xxx-###.mktorest.com/rest/asset/v1/program/'+input['pid']+'/c
 
 
 name =  "Content_" + c_type + "_" + year + "_" + month + "_" + c_name 
-
 folder = '{"id":' + fid + ',"type":"Folder"}'
 
 payload = 'name=' + urllib.parse.quote(name) + '&folder=' + urllib.parse.quote(folder) +  '&description=' + urllib.parse.quote(input['description'])
