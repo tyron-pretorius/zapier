@@ -29,7 +29,7 @@ fid = f_info.split(":")[1]
 print (now.year, now.month)
 
 #https://developers.marketo.com/rest-api/assets/programs/#clone
-url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/program/'+input['pid']+'/clone.json?'
+url = 'https://###-xxx-###.mktorest.com/rest/asset/v1/program/'+input['pid']+'/clone.json?'
 
 
 name =  "Content_" + c_type + "_" + year + "_" + month + "_" + c_name 
