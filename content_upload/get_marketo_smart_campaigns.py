@@ -1,4 +1,4 @@
-#input variables to Zapier Step 14: Get Marketo Smart Campaigns
+#input variables to Zapier Step 14: Get Marketo Smart Campaign IDs
 input={
   'token': 'Token' #from Step 3: Get Marketo Access Token
   'program_id': 'Pid' #from Step 9: Clone Latest Marketo Program
