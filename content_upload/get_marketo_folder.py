@@ -39,7 +39,7 @@ if 'No assets found for the given search criteria' in response.text:
     
     payload = 'name=' +  urllib.parse.quote(name) + '&parent=' + urllib.parse.quote(folder)
     
-    url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/folders.json'
+    url = 'https://###-xxx-###.mktorest.com/rest/asset/v1/folders.json'
     
     response = requests.request("POST", url, headers=headers, data = payload)
     print(response.text)
