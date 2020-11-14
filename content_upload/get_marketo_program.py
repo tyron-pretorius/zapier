@@ -20,6 +20,7 @@ if 'Existing' in input['folder_info']:
 else:
     c_type = input['c_type']
     name = str(now.year-1) + ' ' + content_type[c_type][0]
+    #https://developers.marketo.com/rest-api/assets/folders/#by_name
     url = "https://###-xxx-###.mktorest.com/rest/asset/v1/folder/byName.json?name="+name
 
     payload = {}
@@ -29,7 +30,7 @@ else:
     response = requests.request("GET", url, headers=headers, data = payload)
     fid = re.search('"folderId":{"id":(\d*),', response.text ).group(1)
     print(response.text)
-
+#https://developers.marketo.com/rest-api/assets/folders/#browse
 url = 'https://###-xxx-###.mktorest.com/rest/asset/v1/folders.json?root={\"id\":'+fid+',\"type\":\"Folder\"}'
 
 payload = {}
