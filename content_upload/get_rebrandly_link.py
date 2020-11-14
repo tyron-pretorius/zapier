@@ -12,6 +12,7 @@ if '.png' in input['dest']:
 else:
     dest = 'http://go.telnyx.com/redirector.html#' + input['dest']
 
+#https://developers.rebrandly.com/docs
 linkRequest = {
   "destination": dest
   , "domain": { "fullName": "tlyx.co" }
