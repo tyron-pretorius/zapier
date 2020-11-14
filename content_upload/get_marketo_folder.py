@@ -19,6 +19,7 @@ content_type = {"Case Study": ["Case Studies", "1947"] , "eBook":["eBooks","1948
 
 name = year + ' ' + content_type[c_type][0]
 
+#https://developers.marketo.com/rest-api/assets/folders/#by_name
 url = "https://###-xxx-###.mktorest.com/rest/asset/v1/folder/byName.json?name="+name
 
 payload = {}
