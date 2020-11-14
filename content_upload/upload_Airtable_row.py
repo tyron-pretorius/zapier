@@ -9,6 +9,8 @@ import requests
 import datetime
 import json
 
+
+#https://airtable.com/api
 content_type = {"Case Study": ["recjkV3BC4G1ivVND","Case%20Studies"] , "eBook":["recjAroCT0KNRuHC2","eBooks"], "Fact Sheet":["recRq8P5MHkeK6ZDV","Fact%20Sheets"], "Infographic":["reckG4aGBdkqtYB2z", "Infographics"], "Guide":["recmNFMoRiuE7IF2j", "Other"], "Whitepaper":["recxrhA9kyyGDRES7","Other"]}
 
 c_type = input['c_type']
