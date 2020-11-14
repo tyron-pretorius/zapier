@@ -20,6 +20,7 @@ f = urllib.request.urlopen(path)
 mime_type = f.info().get_content_type()
 f_ext = f.info().get_content_type().split("/")[1]
 
+#https://developers.marketo.com/rest-api/assets/files/#create_and_update
 url = "https://###-xxx-###.mktorest.com/rest/asset/v1/files.json"
 
 content_type = {"Case Study": ["CaseStudy", "169"] , "eBook":["eBook","1569"], "Fact Sheet":["FactSheet","2076"], "Infographic":["Infographic","2070"], "Guide":["Guide","2076"], "Whitepaper":["Whitepaper","2067"]}
