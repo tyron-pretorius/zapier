@@ -3,6 +3,7 @@ input={
   'token': 'xxxx', #from Step 2: Get Marketo Access Token
   'base_url': 'https://###-xxx-###.mktorest.com',
   'final_dict': 'final_dict_string' #from Step 4: Select Winning Field Values
+  'field_dict': 'field_dict_string' #from Step 4: Select Winning Field Values
   }
 
 import requests
@@ -32,9 +33,14 @@ def createUpdateLead(base_url, token, lead_dict):
     return (response.text)
 
 #---------------- Update Function End --------------
+field_dict = ast.literal_eval(input['field_dict'])
+final_dict = ast.literal_eval(input['final_dict'])
+
+loser_ids = field_dict['id']
+loser_ids.remove(final_dict['id'])
 
 update_leads = ['']
-update_leads[0] = ast.literal_eval(input['final_dict'])
+update_leads[0] = final_dict
 
 response = createUpdateLead(input['base_url'], input['token'], update_leads)
 log = "Update Response:\n" + response + "\n\n"
@@ -45,7 +51,7 @@ n = 0
 while '"status":"skipped"' in str(response) and n < len(loser_ids):
     update_leads[0]['id'] = loser_ids[n]
     log = log + str(update_leads[0]) + "\n\n"
-    response = createUpdateLead(base_url, token, update_leads)
+    response = createUpdateLead(input['base_url'], input['token'], update_leads)
     log = log + "Update Response:\n" + response + "\n\n"
     n=n+1
  
