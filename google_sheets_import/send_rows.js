@@ -2,6 +2,7 @@ function sendRows() {
   
 
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Customer Database");
+
   var rows = sheet.getDataRange().getValues();
 
   var names_string="";
@@ -10,20 +11,20 @@ function sendRows() {
   var phones_string="";
 
   for (var i=1;i<rows.length;i++){
-
+    
     if(rows[i][4]==true){
 
       if (names_string==""){
-        names_string = rows[i][1];
-        orders_string = rows[i][2];
-        emails_string = rows[i][3];
-        phones_string = rows[i][4];
+        names_string = rows[i][0];
+        orders_string = rows[i][1];
+        emails_string = rows[i][2];
+        phones_string = rows[i][3];
       }
       else{
-        names_string = names_string+"*"+rows[i][1];
-        orders_string = orders_string+"*"+rows[i][2];
-        emails_string = emails_string+"*"+rows[i][3];
-        phones_string = phones_string+"*"+rows[i][4];
+        names_string = names_string+"*"+rows[i][0];
+        orders_string = orders_string+"*"+rows[i][1];
+        emails_string = emails_string+"*"+rows[i][2];
+        phones_string = phones_string+"*"+rows[i][3];
       }
 
 
