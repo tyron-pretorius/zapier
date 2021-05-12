@@ -12,14 +12,14 @@ function sendRowsForNesting() {
   var emails_string;
   var phones_string;
 
-  for (var i=1; i <= 9; i=i+zapier_iteration_limit){
+  for (var i=1; i <= rows.length; i=i+zapier_iteration_limit){
 
      names_string="";
      orders_string="";
      emails_string="";
      phones_string="";
 
-    for (var j=0;(j<zapier_iteration_limit) &&( (i+j) <=9);j++){
+    for (var j=0;(j<zapier_iteration_limit) &&( (i+j) <=rows.length);j++){
       
       if (names_string==""){
         names_string = rows[i+j][0];
