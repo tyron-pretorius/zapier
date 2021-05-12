@@ -5,7 +5,7 @@ function sendRowsForNesting() {
 
   var rows = sheet.getDataRange().getValues();
 
-  var zapier_iteration_limit = 3;
+  var zapier_iteration_limit = 500;
 
   var names_string;
   var orders_string;
