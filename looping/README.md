@@ -1,0 +1,1 @@
+The code in this repository can be used to achieve nested looping in the Zapier automation tool using webhooks.For a thorough walkthrough of how to use this code take a look at the [Zapier Loop Array with Nesting](https://theworkflowpro.com/zapier-loop-array-with-nesting/?utm_source=github&utm_medium=referral&utm_campaign=readme) post on TheWorkflowPro blog.
