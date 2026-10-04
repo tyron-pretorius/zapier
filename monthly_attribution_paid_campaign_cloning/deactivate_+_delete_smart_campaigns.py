@@ -21,10 +21,10 @@ sc_names = input['sc_names'].split(",")
 
 for i in range(0,len(sc_ids)):
         if "Anonymous" not in sc_names[i]:
-            url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/smartCampaign/'+sc_ids[i]+'/deactivate.json'
+            url = 'https://123-abc-456.mktorest.com/rest/asset/v1/smartCampaign/'+sc_ids[i]+'/deactivate.json'
             
         else:
-            url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/smartCampaign/'+sc_ids[i]+'/delete.json'
+            url = 'https://123-abc-456.mktorest.com/rest/asset/v1/smartCampaign/'+sc_ids[i]+'/delete.json'
                 
         response = response + requests.request("POST", url, headers=headers, data ={}).text    
 

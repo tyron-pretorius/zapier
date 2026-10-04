@@ -10,7 +10,7 @@ import json
 if '.png' in input['dest']:
     dest = input['dest']
 else:
-    dest = 'http://go.telnyx.com/redirector.html#' + input['dest']
+    dest = 'http://go.example.com/redirector.html#' + input['dest']
 
 #https://developers.rebrandly.com/docs
 linkRequest = {

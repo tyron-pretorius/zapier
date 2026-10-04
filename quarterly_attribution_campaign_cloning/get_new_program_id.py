@@ -12,7 +12,7 @@ base = re.search('\d*Q\d[\s\-\s]*(.*)', input['clone']).group(1)
 q_mapping = {'01':'Q1', '04':'Q2','07':'Q3','10':'Q4'}
 name = input['year'] + q_mapping[input['month']] + ' - ' + base
 
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/folder/byName.json?name="+name
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/folder/byName.json?name="+name
 
 payload = {}
 headers = {

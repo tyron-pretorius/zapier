@@ -16,7 +16,7 @@ year_ago = (datetime.datetime.today().date()-datetime.timedelta(60))
 today = str(today)
 year_ago = str(year_ago)
 
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/programs.json?earliestUpdatedAt="+year_ago+"&latestUpdatedAt="+today+"&maxReturn=200"
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/programs.json?earliestUpdatedAt="+year_ago+"&latestUpdatedAt="+today+"&maxReturn=200"
 
 payload = {}
 headers = {

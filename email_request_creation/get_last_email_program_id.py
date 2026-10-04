@@ -8,7 +8,7 @@ import requests
 import datetime
 import re
  
-url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/folders.json?root={"id":'+input['root']+',"type":"Folder"}'
+url = 'https://123-abc-456.mktorest.com/rest/asset/v1/folders.json?root={"id":'+input['root']+',"type":"Folder"}'
 
 payload = {}
 headers = {

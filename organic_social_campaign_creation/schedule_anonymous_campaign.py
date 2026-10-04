@@ -16,7 +16,7 @@ sc_names = input['sc_names'].split(",")
 for i in range(0,len(sc_ids)):
         if "Anonymous" in sc_names[i]:
             
-            url = 'https://028-jjw-728.mktorest.com/rest/v1/campaigns/'+sc_ids[i]+'/schedule.json'
+            url = 'https://123-abc-456.mktorest.com/rest/v1/campaigns/'+sc_ids[i]+'/schedule.json'
             now = datetime.datetime.now()
             day = str(calendar.monthrange(now.year,now.month)[1])
             month = str(now.month)

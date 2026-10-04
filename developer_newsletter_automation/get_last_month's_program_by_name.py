@@ -26,7 +26,7 @@ if len(month)==1:
 
 name = 'Email_' + year + '_' + month + '_' + lastMonth.strftime("%B") + '_Developer_Newsletter'
 
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/folder/byName.json?name="+name
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/folder/byName.json?name="+name
 
 payload = {}
 headers = {

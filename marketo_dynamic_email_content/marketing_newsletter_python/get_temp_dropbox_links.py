@@ -23,7 +23,7 @@ dbx_links = ['']*len(links)
 
 for i in range(0,len(paths)):
     paths[i]  = urlparse(links[i]).path
-    paths[i] = re.search("(/Telnyx.*$)",paths[i]).group(0).lower()
+    paths[i] = re.search("(/YourFolder.*$)",paths[i]).group(0).lower()
     paths[i] = unquote(paths[i])
 
     print(paths[i])

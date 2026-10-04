@@ -12,10 +12,10 @@ from ToBoolean import ToBoolean
 from ToInt import ToInt
 from ToUTC import ToUTC
 
-base_url = "https://028-jjw-728.mktorest.com"
+base_url = "https://123-abc-456.mktorest.com"
 
 raw_list = pd.read_csv('/home/tyron/Downloads/Possible_Duplicates (18).csv')
-raw_list.rename(columns={'Id':'id', 'Marketo SFDC ID': 'sfdcLeadId', 'SFDC Type':'sfdcType', 'Email Address': 'email', 'Created At': 'createdAt', 'First Name': 'firstName', 'Last Name': 'lastName', 'Person Status': 'leadStatus', 'Status Details': 'Status_Details__c', 'MC Account - Blocked?': 'MC_Account_Blocked__c','Person Source':'leadSource','Lead Source Detail': 'Lead_Source_Detail__c', 'utm_source': 'utm_source__c', 'utm_medium':'utm_medium__c','utm_campaign':'utm_campaign__c' , 'MQL Source':'MQL_Source__c', 'MQL Source Detail':'MQL_Source_Detail__c', 'reMQL Source':'reMQL_Source__c', 'reMQL Source Detail':'reMQL_Source_Detail__c', 'reMQL Source History':'reMQLSourceHistory__c', 'reMQL Source Detail History':'reMQLSourceDetailHistory__c','Unsubscribed':'unsubscribed','Subscription - Last Updated':'subscriptionLastUpdated','Subscription - Opt-In':'Subscription_Opt_In__c','Subscription - Bootcamp': 'Subscription_Bootcamp__c','Subscription - Developer':'Subscription_Developer__c' ,'Subscription - Event Updates':'Subscription_Event_Updates__c','Subscription - Featured Content':'Subscription_Featured_Content__c','Subscription - Marketing Newsletter':'Subscription_Marketing_Newsletter__c','Subscription - Product News':'Subscription_Product_News__c','Subscription - Product Programmable Voic':'Subscription_Product_Programmable_Voic__c','Subscription - Product SMS':'Subscription_Product_SMS__c', 'Subscription - Product Voice':'Subscription_Product_Voice__c','Subscription - Product Wireless':'Subscription_Product_Wireless__c','Behavior Score - 7 day':'Behavior_Score_7_day__c','Behavior Score - 7 day History':'Behavior_Score_7_day_History__c'},inplace=True)
+raw_list.rename(columns={'Id':'id', 'Marketo SFDC ID': 'sfdcLeadId', 'SFDC Type':'sfdcType', 'Email Address': 'email', 'Created At': 'createdAt', 'First Name': 'firstName', 'Last Name': 'lastName', 'Person Status': 'leadStatus', 'Status Details': 'Status_Details__c', 'MC Account - Blocked?': 'MC_Account_Blocked__c','Person Source':'leadSource','Lead Source Detail': 'Lead_Source_Detail__c', 'utm_source': 'utm_source__c', 'utm_medium':'utm_medium__c','utm_campaign':'utm_campaign__c' , 'MQL Source':'MQL_Source__c', 'MQL Source Detail':'MQL_Source_Detail__c', 'reMQL Source':'reMQL_Source__c', 'reMQL Source Detail':'reMQL_Source_Detail__c', 'reMQL Source History':'reMQLSourceHistory__c', 'reMQL Source Detail History':'reMQLSourceDetailHistory__c','Unsubscribed':'unsubscribed','Subscription - Last Updated':'subscriptionLastUpdated','Subscription - Opt-In':'Subscription_Opt_In__c','Subscription - Bootcamp': 'Subscription_Bootcamp__c','Subscription - Developer':'Subscription_Developer__c' ,'Subscription - Event Updates':'Subscription_Event_Updates__c','Subscription - Featured Content':'Subscription_Featured_Content__c','Subscription - Marketing Newsletter':'Subscription_Marketing_Newsletter__c','Subscription - Product News':'Subscription_Product_E__c','Subscription - Product Programmable Voic':'Subscription_Product_D__c','Subscription - Product SMS':'Subscription_Product_C__c', 'Subscription - Product Voice':'Subscription_Product_B__c','Subscription - Product Wireless':'Subscription_Product_A__c','Behavior Score - 7 day':'Behavior_Score_7_day__c','Behavior Score - 7 day History':'Behavior_Score_7_day_History__c'},inplace=True)
 
 ToInt(raw_list)
 ToUTC(raw_list)
@@ -31,7 +31,7 @@ raw_list = raw_list.to_dict(orient='records')
 #sorts the dictionary by email address
 raw_list = sorted(raw_list, key=lambda d: d['email'])
 
-field_dict = {'id': [], 'sfdcLeadId': [], 'sfdcType':[], 'email': [], 'createdAt': [], 'firstName': [], 'lastName': [], 'leadSource': [], 'Lead_Source_Detail__c': [], 'utm_source__c': [],'utm_medium__c':[],'utm_campaign__c':[], 'leadStatus': [], 'Status_Details__c':[],'MC_Account_Blocked__c':[] , 'MQL_Source__c':[], 'MQL_Source_Detail__c':[], 'reMQL_Source__c':[], 'reMQL_Source_Detail__c':[], 'reMQLSourceDetailHistory__c':[], 'reMQLSourceHistory__c':[],'Behavior_Score_7_day__c':[],'Behavior_Score_7_day_History__c':[],'subscriptionLastUpdated':[],'unsubscribed': [],'Subscription_Opt_In__c':[] ,'Subscription_Product_Programmable_Voic__c':[],'Subscription_Product_SMS__c':[],'Subscription_Product_Voice__c':[],'Subscription_Product_Wireless__c':[],'Subscription_Product_News__c':[],'Subscription_Featured_Content__c':[], 'Subscription_Marketing_Newsletter__c':[],'Subscription_Event_Updates__c':[],'Subscription_Bootcamp__c':[],'Subscription_Developer__c':[]}
+field_dict = {'id': [], 'sfdcLeadId': [], 'sfdcType':[], 'email': [], 'createdAt': [], 'firstName': [], 'lastName': [], 'leadSource': [], 'Lead_Source_Detail__c': [], 'utm_source__c': [],'utm_medium__c':[],'utm_campaign__c':[], 'leadStatus': [], 'Status_Details__c':[],'MC_Account_Blocked__c':[] , 'MQL_Source__c':[], 'MQL_Source_Detail__c':[], 'reMQL_Source__c':[], 'reMQL_Source_Detail__c':[], 'reMQLSourceDetailHistory__c':[], 'reMQLSourceHistory__c':[],'Behavior_Score_7_day__c':[],'Behavior_Score_7_day_History__c':[],'subscriptionLastUpdated':[],'unsubscribed': [],'Subscription_Opt_In__c':[] ,'Subscription_Product_D__c':[],'Subscription_Product_C__c':[],'Subscription_Product_B__c':[],'Subscription_Product_A__c':[],'Subscription_Product_E__c':[],'Subscription_Featured_Content__c':[], 'Subscription_Marketing_Newsletter__c':[],'Subscription_Event_Updates__c':[],'Subscription_Bootcamp__c':[],'Subscription_Developer__c':[]}
 final_dict = field_dict.fromkeys(field_dict, [])
 
 count = 0
@@ -88,9 +88,9 @@ while i < limit:
                 if line in ['email', 'id', 'sfdcLeadId', 'Lead_Source_Detail__c', 'utm_source__c', 'utm_medium__c',
                             'utm_campaign__c',
                             'Status_Details__c', 'Behavior_Score_7_day_History__c', 'unsubscribed', 'Status_Details__c',
-                            'Subscription_Product_Programmable_Voic__c', 'Subscription_Product_SMS__c',
-                            'Subscription_Product_Voice__c', 'Subscription_Product_Wireless__c',
-                            'Subscription_Product_News__c', 'Subscription_Featured_Content__c',
+                            'Subscription_Product_D__c', 'Subscription_Product_C__c',
+                            'Subscription_Product_B__c', 'Subscription_Product_A__c',
+                            'Subscription_Product_E__c', 'Subscription_Featured_Content__c',
                             'Subscription_Marketing_Newsletter__c', 'Subscription_Event_Updates__c',
                             'Subscription_Bootcamp__c', 'MQL_Source__c', 'MQL_Source_Detail__c', 'reMQL_Source__c',
                             'reMQL_Source_Detail__c', 'reMQLSourceDetailHistory__c', 'reMQLSourceHistory__c']:
@@ -132,12 +132,12 @@ while i < limit:
                     [index, value] = ruler(line, field_dict[line])
                     final_dict[line] = value
                     final_dict["unsubscribed"] = field_dict["unsubscribed"][index]
-                    final_dict["Subscription_Product_Programmable_Voic__c"] = field_dict["Subscription_Product_Programmable_Voic__c"][index]
-                    final_dict["Subscription_Product_SMS__c"] = field_dict["Subscription_Product_SMS__c"][index]
-                    final_dict["Subscription_Product_Voice__c"] = field_dict["Subscription_Product_Voice__c"][index]
-                    final_dict["Subscription_Product_Wireless__c"] = field_dict["Subscription_Product_Wireless__c"][
+                    final_dict["Subscription_Product_D__c"] = field_dict["Subscription_Product_D__c"][index]
+                    final_dict["Subscription_Product_C__c"] = field_dict["Subscription_Product_C__c"][index]
+                    final_dict["Subscription_Product_B__c"] = field_dict["Subscription_Product_B__c"][index]
+                    final_dict["Subscription_Product_A__c"] = field_dict["Subscription_Product_A__c"][
                         index]
-                    final_dict["Subscription_Product_News__c"] = field_dict["Subscription_Product_News__c"][index]
+                    final_dict["Subscription_Product_E__c"] = field_dict["Subscription_Product_E__c"][index]
                     final_dict["Subscription_Featured_Content__c"] = field_dict["Subscription_Featured_Content__c"][
                         index]
                     final_dict["Subscription_Marketing_Newsletter__c"] = field_dict["Subscription_Marketing_Newsletter__c"][index]

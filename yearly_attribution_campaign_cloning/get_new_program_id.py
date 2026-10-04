@@ -10,7 +10,7 @@ import re
 base = re.search('\d*[\s\-\s]*(.*)', input['clone']).group(1)
 name = input['year'] + ' - ' + base
 
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/folder/byName.json?name="+name
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/folder/byName.json?name="+name
 
 payload = {}
 headers = {

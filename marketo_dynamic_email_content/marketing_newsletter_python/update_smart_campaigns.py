@@ -20,7 +20,7 @@ headers = {
 response =""
 description = input["values"].split('*')[-1][1:] #the [1:] is just to get rid of the ? at the start of the querystring
 for sc_id in smart_campaigns:
-        url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/smartCampaign/'+sc_id+'.json'
+        url = 'https://123-abc-456.mktorest.com/rest/asset/v1/smartCampaign/'+sc_id+'.json'
         payload = 'description=' + urllib.parse.quote(description)
         response = response + requests.request("POST", url, headers=headers, data = payload).text    
 

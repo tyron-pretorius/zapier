@@ -17,7 +17,7 @@ headers = {
 response =""
 description = input["utm"]
 for sc_id in smart_campaigns:
-        url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/smartCampaign/'+sc_id+'.json'
+        url = 'https://123-abc-456.mktorest.com/rest/asset/v1/smartCampaign/'+sc_id+'.json'
         payload = 'description=' + urllib.parse.quote(description)
         response = response + requests.request("POST", url, headers=headers, data = payload).text    
 

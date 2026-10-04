@@ -27,7 +27,7 @@ if len(month)<2:
 
 name = year + ' Paid Campaigns'
 
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/folder/byName.json?name=" + name
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/folder/byName.json?name=" + name
 
 response = requests.request("GET", url, headers=headers, data=payload)
 print(response.text)
@@ -42,7 +42,7 @@ if 'No assets found for the given search criteria' in response.text:
 
     payload = 'name=' + urllib.parse.quote(name) + '&parent=' + urllib.parse.quote(folder)
 
-    url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/folders.json'
+    url = 'https://123-abc-456.mktorest.com/rest/asset/v1/folders.json'
 
     response = requests.request("POST", url, headers=headers, data=payload)
     print(response.text)
