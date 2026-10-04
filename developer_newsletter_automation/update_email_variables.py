@@ -38,7 +38,7 @@ for i in range(0, len(variable_names)):
     value = urllib.parse.quote(values[i])
 
     module_id = module_ids[i]
-    url = "https://028-jjw-728.mktorest.com/rest/asset/v1/email/"+input['email_id']+"/variable/"+variable_name+".json"
+    url = "https://123-abc-456.mktorest.com/rest/asset/v1/email/"+input['email_id']+"/variable/"+variable_name+".json"
     if module_id:
          payload = 'value='+value +'&moduleId=' + module_id
     else: #if it is a global variable and does not need a module id e.g. utm

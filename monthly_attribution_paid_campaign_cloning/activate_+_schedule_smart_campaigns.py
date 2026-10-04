@@ -16,7 +16,7 @@ sc_names = input['sc_names'].split(",")
 
 for i in range(0,len(sc_ids)):
         if "Anonymous" not in sc_names[i]:
-            url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/smartCampaign/'+sc_ids[i]+'/activate.json'
+            url = 'https://123-abc-456.mktorest.com/rest/asset/v1/smartCampaign/'+sc_ids[i]+'/activate.json'
             payload ={}
             headers = {
                      'Content-Type': 'application/x-www-form-urlencoded',
@@ -24,7 +24,7 @@ for i in range(0,len(sc_ids)):
                     }
         else: #schedule the batch program to run one last time before it is deleted by next month's program
             
-            url = 'https://028-jjw-728.mktorest.com/rest/v1/campaigns/'+sc_ids[i]+'/schedule.json'
+            url = 'https://123-abc-456.mktorest.com/rest/v1/campaigns/'+sc_ids[i]+'/schedule.json'
             now = datetime.datetime.now()
             day = str(calendar.monthrange(now.year,now.month)[1])
             month = str(now.month)

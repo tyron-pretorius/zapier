@@ -12,7 +12,7 @@ import re
 import urllib.parse
 
 authorization = "Bearer " + input['token']
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/folder/" + input['program_id'] + "/tokens.json"
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/folder/" + input['program_id'] + "/tokens.json"
 
 utm=input['utm']
 token_type = 'text'

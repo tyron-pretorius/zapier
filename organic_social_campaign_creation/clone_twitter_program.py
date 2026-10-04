@@ -30,7 +30,7 @@ id=input['ids'].split(",")[2]
 
 description = "utm_source=organic_social&utm_medium=" + medium +"&utm_campaign=rc_"+year+"_"+month
 
-url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/program/'+id+'/clone.json?'
+url = 'https://123-abc-456.mktorest.com/rest/asset/v1/program/'+id+'/clone.json?'
 
 payload = 'name=' + urllib.parse.quote(name) + '&folder=' + urllib.parse.quote(folder) +  '&description=' + urllib.parse.quote(description)
 

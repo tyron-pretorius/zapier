@@ -19,11 +19,11 @@ modules = input['modules'].split("*")
 response = ''
 
 for module in modules:
-    url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/email/'+input['eid']+'/content/'+module+'.json'
+    url = 'https://123-abc-456.mktorest.com/rest/asset/v1/email/'+input['eid']+'/content/'+module+'.json'
 
     response = response + requests.request("POST", url, headers=headers, data = payload).text
 
-url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/email/'+input['eid']+'/content.json'
+url = 'https://123-abc-456.mktorest.com/rest/asset/v1/email/'+input['eid']+'/content.json'
 
 content_response = requests.request("GET", url, headers={'Authorization': 'Bearer ' + input['token']}, data = {}).text
 

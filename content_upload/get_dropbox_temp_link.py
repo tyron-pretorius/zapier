@@ -12,7 +12,7 @@ import json
 #https://www.dropbox.com/developers/documentation/http/documentation#files-get_temporary_link
 
 path  = urlparse(input["link"]).path
-path = re.search("(/Telnyx.*$)",path).group(0).lower()
+path = re.search("(/YourFolder.*$)",path).group(0).lower()
 path = unquote(path)
 
 print(path)

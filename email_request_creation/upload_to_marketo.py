@@ -20,12 +20,12 @@ headers = {
   'Authorization': 'Bearer ' + input['token']
 }
 
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/files.json"
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/files.json"
 
 for key, value in mapping.items():
     if isinstance(value, list):
         path  = urllib.parse.urlparse(value[0]).path
-        path = re.search("(/Telnyx.*$)",path).group(0).lower()
+        path = re.search("(/YourFolder.*$)",path).group(0).lower()
         path = urllib.parse.unquote(path)
         name = path.split("/")[-1]
         

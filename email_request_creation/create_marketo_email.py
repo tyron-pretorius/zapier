@@ -25,7 +25,7 @@ for i in range(0, len(jibberish)):
 
 email_name = "Email " + dictionary['Email Name']
 
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/emails.json"
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/emails.json"
 authorization = "Bearer " + input['token']
 
 payload = 'folder={"id":' + input['folder_id'] +',"type":'+input['folder_type'] + '}&template=' + templates[input['template']] + '&subject=' + dictionary['Subject Line A'] + '&fromName=' + dictionary['From'] + '&fromEmail=' + dictionary['From Address'] + '&replyEmail=' + dictionary['Reply Address'] + '&operational=' + input['operational'] + '&name=' + email_name

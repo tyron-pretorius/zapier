@@ -40,7 +40,7 @@ for i in range(0,len(ids)):
     utm = urllib.parse.quote(utm)
     token_values = [utm, campaign]
 
-    url = "https://028-jjw-728.mktorest.com/rest/asset/v1/folder/" + ids[i] + "/tokens.json"
+    url = "https://123-abc-456.mktorest.com/rest/asset/v1/folder/" + ids[i] + "/tokens.json"
 
     for j in range(0, len(token_names)):
         payload = 'name=' + token_names[j] + '&value=' + token_values[j] + '&type=' + token_type + '&folderType=' + folder_type

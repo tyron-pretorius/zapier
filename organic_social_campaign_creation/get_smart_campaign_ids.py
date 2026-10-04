@@ -19,7 +19,7 @@ response=""
 ids = [input["fb_pid"],input["li_pid"],input["tw_pid"]]
 
 for i in ids:
-    url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/smartCampaigns.json?folder={"id":' + i + ',"type":"Program"}'
+    url = 'https://123-abc-456.mktorest.com/rest/asset/v1/smartCampaigns.json?folder={"id":' + i + ',"type":"Program"}'
     response = response + requests.request("GET", url, headers=headers, data = payload).text
 
 sc_ids = re.findall('"id":(\d*),"name":".*?","description":',response)

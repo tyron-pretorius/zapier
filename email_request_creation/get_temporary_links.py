@@ -25,7 +25,7 @@ links = []
 for key, value in mapping.items():
     if re.match('https://www.dropbox.com', value):
         path = urlparse(value).path
-        path = re.search("(/Telnyx.*$)", path).group(0).lower()
+        path = re.search("(/YourFolder.*$)", path).group(0).lower()
         path = unquote(path)
 
         payload = {"path": path}

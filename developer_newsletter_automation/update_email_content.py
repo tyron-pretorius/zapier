@@ -19,7 +19,7 @@ for i in range(0, len(jibberish)):
 
 encoded = urllib.parse.quote(input['value'])
 
-url='https://028-jjw-728.mktorest.com/rest/asset/v1/email/'+input['email_id']+'/content/'+input['html_id']+'.json'
+url='https://123-abc-456.mktorest.com/rest/asset/v1/email/'+input['email_id']+'/content/'+input['html_id']+'.json'
 print(input['value'])
 authorization = "Bearer " + input['token']
 payload = 'type=' + input['type'] + '&value='+ encoded

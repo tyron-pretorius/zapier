@@ -13,7 +13,7 @@ year = str(now.year)
 
 email_name = "EM - " + now.strftime("%B") + " Dev " + year
 
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/emails.json"
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/emails.json"
 authorization = "Bearer " + input['token']
 
 payload = 'folder={"id":' + input['program_id'] +',"type":'+input['folder_type'] + '}&template=' + input['template_id'] + '&subject=' + input['subject'] + '&fromName=' + input['from_name'] + '&fromEmail=' + input['from_add'] + '&replyEmail=' + input['reply_add'] + '&operational=' + input['operational'] + '&name=' + email_name

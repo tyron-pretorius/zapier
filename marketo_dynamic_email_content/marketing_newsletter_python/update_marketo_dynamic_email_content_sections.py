@@ -48,7 +48,7 @@ response=''
 
 for d in range(0,len(dids)):
 
-    url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/email/'+input['eid']+'/dynamicContent/'+dids[d]+'.json'
+    url = 'https://123-abc-456.mktorest.com/rest/asset/v1/email/'+input['eid']+'/dynamicContent/'+dids[d]+'.json'
     
     for s in range(0,len(segments)):
         value = input['template']

@@ -8,7 +8,7 @@ import requests
 
 authorization = "Bearer " + input['token']
 
-url = "https://028-jjw-728.mktorest.com//rest/asset/v1/smartCampaigns.json?folder={\"id\":"+ input['program_id']+", \"type\": \"Program\"}"
+url = "https://123-abc-456.mktorest.com//rest/asset/v1/smartCampaigns.json?folder={\"id\":"+ input['program_id']+", \"type\": \"Program\"}"
 
 payload = {}
 headers = {

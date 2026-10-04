@@ -20,7 +20,7 @@ if len(month)==1:
     
 name = 'Email_' + year + '_' + month + '_' + now.strftime("%B") + '_Newsletter'
 
-url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/program/'+input['id']+'/clone.json?'
+url = 'https://123-abc-456.mktorest.com/rest/asset/v1/program/'+input['id']+'/clone.json?'
 
 folder = '{"id":' + input["folder_id"] + ',"type":"Folder"}'
     

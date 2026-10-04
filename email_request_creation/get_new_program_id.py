@@ -12,7 +12,7 @@ name = input['name']
 
 prog_name = 'Email_' + dates[0] + '_' + dates[1] + '_' + dates[2] + '_' + name
 
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/folder/byName.json?name="+prog_name
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/folder/byName.json?name="+prog_name
 
 payload = {}
 headers = {

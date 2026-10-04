@@ -26,7 +26,7 @@ prog_name = year + month + " - " + channel + " - " + sub-channel + " - " + re.se
 
 print(prog_name)
 
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/folder/byName.json?name="+prog_name
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/folder/byName.json?name="+prog_name
 
 payload = {}
 headers = {

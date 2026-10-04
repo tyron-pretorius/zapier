@@ -16,7 +16,7 @@ prog_name = 'Email_' + dates[0] + '_' + dates[1] + '_' + dates[2] + '_' + name
 
 utm = 'utm_source=mkto&utm_medium=email&utm_campaign='+name.replace(" ","_").lower()
 
-url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/program/'+input['id']+'/clone.json?'
+url = 'https://123-abc-456.mktorest.com/rest/asset/v1/program/'+input['id']+'/clone.json?'
 
 folder = '{"id":' + input["folder_id"] + ',"type":"Folder"}'
     

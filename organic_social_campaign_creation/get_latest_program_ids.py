@@ -32,7 +32,7 @@ headers = {
 response=""
 
 for i in name_ends:
-    url = "https://028-jjw-728.mktorest.com/rest/asset/v1/program/byName.json?name="+name_base+i
+    url = "https://123-abc-456.mktorest.com/rest/asset/v1/program/byName.json?name="+name_base+i
 
     response = response + requests.request("GET", url, headers=headers, data = payload).text
 

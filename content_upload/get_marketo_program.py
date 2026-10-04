@@ -42,7 +42,7 @@ response = requests.request("GET", url, headers=headers, data = payload)
 
 raw=response.text
 print(raw)
-pattern = '"createdAt":"\d*-\d*-\w*:\d*:\w*\+\d*","updatedAt":"\d*-\d*-\w*:\d*:\w*\+\d*","url":"https://app-ab20.marketo.com/#PG\w+","folderId":{"id":\d*,"type":"Program"}'
+pattern = '"createdAt":"\d*-\d*-\w*:\d*:\w*\+\d*","updatedAt":"\d*-\d*-\w*:\d*:\w*\+\d*","url":"https://app-abXX.marketo.com/#PG\w+","folderId":{"id":\d*,"type":"Program"}'
      
 dates = re.findall(pattern, raw)
 print(dates)

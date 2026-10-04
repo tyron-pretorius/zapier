@@ -30,7 +30,7 @@ for i in range(0,len(mediums)):
     description = "utm_source=organic_social&utm_medium=" + mediums[i] +"&utm_campaign=rc_"+year+"_"+month
     
     for j in range((4*i),(1+i)*4):
-        url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/smartCampaign/'+ids[j]+'.json'
+        url = 'https://123-abc-456.mktorest.com/rest/asset/v1/smartCampaign/'+ids[j]+'.json'
         payload = 'description=' + urllib.parse.quote(description)
         response = response + requests.request("POST", url, headers=headers, data = payload).text    
         

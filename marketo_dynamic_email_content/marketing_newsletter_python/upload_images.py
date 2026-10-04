@@ -18,7 +18,7 @@ headers = {
   'Authorization': 'Bearer ' + input['token']
 }
 
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/files.json"
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/files.json"
 
 links = input['dbx'].split("*")
 dbx_links = input['paths'].split(",")
@@ -31,7 +31,7 @@ mkto_url = [None]*len(links)
 
 for i in range(0,len(paths)):
     paths[i]  = urllib.parse.urlparse(links[i]).path
-    paths[i] = re.search("(/Telnyx.*$)",paths[i]).group(0).lower()
+    paths[i] = re.search("(/YourFolder.*$)",paths[i]).group(0).lower()
     paths[i] = urllib.parse.unquote(paths[i])
     names[i] = paths[i].split("/")[-1]
     names[i] = re.sub(r'[\s-]','_',names[i])

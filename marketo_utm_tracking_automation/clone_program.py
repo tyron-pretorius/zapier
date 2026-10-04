@@ -17,7 +17,7 @@ now = datetime.datetime.now()
 year = str(now.year) 
 month = str(now.month)
 
-url = 'https://028-jjw-728.mktorest.com/rest/asset/v1/program/'+input['id']+'/clone.json?'
+url = 'https://123-abc-456.mktorest.com/rest/asset/v1/program/'+input['id']+'/clone.json?'
 
 sub_channel = input['sub_channel']
 

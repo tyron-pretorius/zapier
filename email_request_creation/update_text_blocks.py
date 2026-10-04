@@ -29,7 +29,7 @@ for k in range(0,len(text_block_names)):
     
     print(mkto_ids[text_block_names[k]][1])
     
-    url='https://028-jjw-728.mktorest.com/rest/asset/v1/email/'+input['email_id']+'/content/'+mkto_ids[text_block_names[k]][1]+'.json'
+    url='https://123-abc-456.mktorest.com/rest/asset/v1/email/'+input['email_id']+'/content/'+mkto_ids[text_block_names[k]][1]+'.json'
     
     authorization = "Bearer " + input['token']
     payload = 'type=text&value='+ encoded

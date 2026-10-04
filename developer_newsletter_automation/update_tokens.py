@@ -12,7 +12,7 @@ now = datetime.datetime.now()
 year = str(now.year) 
 
 authorization = "Bearer " + input['token']
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/folder/" + input['program_id'] + "/tokens.json"
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/folder/" + input['program_id'] + "/tokens.json"
 
 #utm = "utm_source=mkto&utm_medium=email&utm_campaign="+now.strftime("%B")+"_developer_newsletter_"+year
 token_type = 'text'

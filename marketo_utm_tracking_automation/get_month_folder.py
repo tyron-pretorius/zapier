@@ -14,7 +14,7 @@ today = str(datetime.datetime.today())
 mmmmyy = re.search('(\d*-\d*)',today )
 folder = mmmmyy.group(1) + " Campaigns"
 
-url = "https://028-jjw-728.mktorest.com/rest/asset/v1/folder/byName.json?name=" + folder
+url = "https://123-abc-456.mktorest.com/rest/asset/v1/folder/byName.json?name=" + folder
 
 payload = {}
 headers = {
@@ -26,7 +26,7 @@ response = requests.request("GET", url, headers=headers, data = payload)
 if 'No assets found for the given search criteria' in response.text:
     parent= '{"id":'+input["parent_id"]+',"type":"Folder"}'
 
-    url = "https://028-jjw-728.mktorest.com/rest/asset/v1/folders.json"
+    url = "https://123-abc-456.mktorest.com/rest/asset/v1/folders.json"
 
     payload = 'parent=' + parent + '&name=' + urllib.parse.quote(folder)
     headers = {
